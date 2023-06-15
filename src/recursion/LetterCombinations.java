@@ -60,7 +60,7 @@ public class LetterCombinations {
         }
         List<String> mainAns = new ArrayList<>(); //[]
 
-        for (int i = 0; i < firstDigitValue.length(); i++) { //abc
+        for (int i = 0; i < firstDigitValue.length(); i++) { //wxyz
             for (int j = 0; j < smallerAns.size(); j++) {  //[jd, je, jf, kd, ke, kf, ld, le, lf]
                 String mainCombination = firstDigitValue.charAt(i) + smallerAns.get(j);
                 mainAns.add(mainCombination);
