@@ -1,5 +1,8 @@
 package linkedlists;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author amgarg
  */
@@ -15,7 +18,6 @@ public class SumOfLL {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
         ListNode result;
-
 
         if(length(l1) > length(l2)) {
             int diff = length(l1) - length(l2);
@@ -78,5 +80,11 @@ public class SumOfLL {
 
         return currentSum;
 
+    }
+
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+
+        System.out.println(list.get(0));
     }
 }
